@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HAPI.Common.DataAccess" Version="0.3.0-ci-112394" />
+    <PackageReference Include="HAPI.Common.Extensions" Version="0.1.4-ci-112394" />
+    <PackageReference Include="HAPI.Common.Models" Version="0.2.0-ci-112394" />
+  </ItemGroup>
+
+</Project>

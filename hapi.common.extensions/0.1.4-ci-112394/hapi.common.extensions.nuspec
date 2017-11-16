@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>HAPI.Common.Extensions</id>
+    <version>0.1.4-ci-112394</version>
+    <authors>HAPI.Common.Extensions</authors>
+    <owners>HAPI.Common.Extensions</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Extension-metoder, som kan brukes på tvers av alle HAPI-prosjektene</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.AspNetCore.Authentication" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
