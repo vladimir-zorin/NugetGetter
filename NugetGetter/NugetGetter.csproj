@@ -6,20 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="HAPI.Common.DataAccess" Version="0.3.0-ci-112394" />
-    <PackageReference Include="HAPI.Common.Extensions" Version="0.1.4-ci-112394" />
-    <PackageReference Include="HAPI.Common.Models" Version="0.2.0-ci-112394" />
+    <PackageReference Include="HAPI.Common.DataAccess" Version="0.3.0-ci-*" />
+    <PackageReference Include="HAPI.Common.Extensions" Version="0.1.4-ci-*" />
+    <PackageReference Include="HAPI.Common.Models" Version="0.2.0-ci-*" />
   </ItemGroup>
-  <!--
-  <ItemGroup>
-    <Content Include="..\packages\*" CopyToOutputDirectory="Always" />
-  </ItemGroup>-->
-  <!--<Target Name="CopyFiles" AfterTargets="build">
-    <ItemGroup>
-      <Nugs Include="..\packages\hapi.common.*\**\*.nupkg" />
-    </ItemGroup>
-    <Copy DestinationFolder="$(OutputPath)" SourceFiles="@(Nugs)" SkipUnchangedFiles="false" />
-  </Target>-->
   <ItemGroup>
     <Content Include="..\packages\hapi.common.*\**\*.nupkg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
