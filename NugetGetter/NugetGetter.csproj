@@ -14,11 +14,16 @@
   <ItemGroup>
     <Content Include="..\packages\*" CopyToOutputDirectory="Always" />
   </ItemGroup>-->
-  <Target Name="CopyFiles" AfterTargets="build">
+  <!--<Target Name="CopyFiles" AfterTargets="build">
     <ItemGroup>
       <Nugs Include="..\packages\hapi.common.*\**\*.nupkg" />
     </ItemGroup>
     <Copy DestinationFolder="$(OutputPath)" SourceFiles="@(Nugs)" SkipUnchangedFiles="false" />
-  </Target>
-
+  </Target>-->
+  <ItemGroup>
+    <Content Include="..\packages\hapi.common.*\**\*.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
 </Project>
